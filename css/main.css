@@ -455,8 +455,8 @@ body {
   top: 10px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  -webkit-animation: btn 4s linear infinite;
-          animation: btn 4s linear infinite;
+  -webkit-animation: btn 2s linear infinite;
+          animation: btn 2s linear infinite;
 }
 
 .item-btn:hover {
