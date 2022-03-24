@@ -93,7 +93,7 @@ function addCard(cardPizzaArray){
       return element.id == item.id;
     });
     li = `
-      <li class="main-item d-flex animate__animated animate__backInUp light-blue">
+      <li class="main-item d-flex position-relative light-blue">
         <div class="main-img-holder">
           <img src="${item.imgUrl}" alt="${item.name}">
         </div>
@@ -147,6 +147,9 @@ function remove(elId) {
   newPizzaArray = a;
   if(newPizzaArray.length === 0){
     elCartList.innerHTML = "";
+    elSub.textContent = 0;
+    elTax.textContent = 0;
+    elTotal.textContent = 0;
   } else{
     addCard(newPizzaArray);
   }
